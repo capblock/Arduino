@@ -653,19 +653,20 @@
     });
     });
   };
-  
+
+ 
   ext.moveWheel = function(pin, val){
     switch(pin){
-      case "왼쪽바퀴-앞":
+      case "왼쪽 위 프로펠러":
         analogWrite(9, val);
         break;
-      case "왼쪽바퀴-뒤":
+      case "왼쪽 아래 프로펠러":
         analogWrite(3, val);
         break;
-      case "오른쪽바퀴-앞":
+      case "오른쪽 위 프로펠러":
         analogWrite(10, val);
         break;
-      case "오른쪽바퀴-뒤":
+      case "오른쪽 위 프로펠러":
         analogWrite(11, val);
         break;
       default:
@@ -1162,7 +1163,7 @@
       outputs: ['켜기', '끄기'],
       ops: ['>', '=', '<'],
       servos: ['서보모터 A', '서보모터 B', '서보모터 C', '서보모터 D'],
-      wheel: ['왼쪽바퀴-앞', '왼쪽바퀴-뒤', '오른쪽바퀴-앞', '오른쪽바퀴-뒤'],
+      wheel: ['왼쪽 위 프로펠러', '왼쪽 아래 프로펠러', '오른쪽 위 프로펠러', '오른쪽 위 프로펠러'],
       buzz: ['도', '레', '미', '파', '솔', '라', '시', '도#']
     },
     nb: {
