@@ -666,7 +666,7 @@
       case "오른쪽 위 프로펠러":
         analogWrite(10, val);
         break;
-      case "오른쪽 위 프로펠러":  
+      case "오른쪽 아래 프로펠러":  
         analogWrite(9, val);
         break;
       default:
