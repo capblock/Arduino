@@ -658,16 +658,16 @@
   ext.moveWheel = function(pin, val){
     switch(pin){
       case "왼쪽 위 프로펠러":
-        analogWrite(9, val);
+        analogWrite(3, val);
         break;
       case "왼쪽 아래 프로펠러":
-        analogWrite(3, val);
+        analogWrite(11, val);
         break;
       case "오른쪽 위 프로펠러":
         analogWrite(10, val);
         break;
       case "오른쪽 위 프로펠러":  
-        analogWrite(11, val);
+        analogWrite(9, val);
         break;
       default:
         moveToStop();
