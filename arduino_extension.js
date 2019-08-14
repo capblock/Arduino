@@ -666,7 +666,7 @@
       case "오른쪽 위 프로펠러":
         analogWrite(10, val);
         break;
-      case "오른쪽 위 프로펠러":
+      case "오른쪽 위 프로펠러":  
         analogWrite(11, val);
         break;
       default:
@@ -1251,7 +1251,7 @@
   var descriptor = {
     blocks: blocks[lang],
     menus: menus[lang],
-    url: 'http://github.com/Halo0070/Arduino'
+    url: 'https://capblock.github.io/gettingstarted.html'
   };
 
   ScratchExtensions.register('Arduino', descriptor, ext, {type:'serial'});
