@@ -653,7 +653,7 @@
     });
     });
   };
-
+  //not working yet
  
   ext.moveWheel = function(pin, val){
     switch(pin){
