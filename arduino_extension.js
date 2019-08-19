@@ -657,16 +657,16 @@
  
   ext.moveWheel = function(pin, val){
     switch(pin){
-      case "왼쪽 위 프로펠러":
+      case "왼쪽 앞 프로펠러":
         analogWrite(3, val);
         break;
-      case "왼쪽 아래 프로펠러":
+      case "왼쪽 뒤 프로펠러":
         analogWrite(11, val);
         break;
-      case "오른쪽 위 프로펠러":
+      case "오른쪽 앞 프로펠러":
         analogWrite(10, val);
         break;
-      case "오른쪽 아래 프로펠러":  
+      case "오른쪽 뒤 프로펠러":  
         analogWrite(9, val);
         break;
       default:
@@ -860,7 +860,7 @@
       ['-'],
       [' ', '로봇을 멈추기','moveToStop'],
       ['r', '울트라소닉 Trig %n Echo %n 센서 값','ultraSonic', 12, 13],
-      [' ', '%m.wheel %n 으로 정하기', 'moveWheel', '왼쪽 위 프로펠러', 50],
+      [' ', '%m.wheel %n 으로 정하기', 'moveWheel', '왼쪽 앞 프로펠러', 50],
       [' ', 'tone on pin %n, freq %n, duration %n', 'tone', 3, 440, 1000],
       [' ', 'stop tone on pin %n', 'noTone', 3], 
       //[' ', '6번 핀의 부저를 %m.buzz %n 음으로 설정', 'buzzer', '도', 100],
